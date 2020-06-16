@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #4a4a4a;
+  background: #f7f7f7;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+a, .bx-menu {
+  color: #3b3b3b;
+}
+
+a:hover {
+  color: #F6A11B;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+hr {
+  border-top: 1px solid rgba(130, 130, 130, 0.1);
+}
+
+blockquote {
+  border-left: 4px solid #f7a01b;
+  padding-left: 20px;
+}
+
+blockquote p {
+  font-size: 14px !important;
+}
+
+.bx {
+  font-size: 1.8rem !important;
+}
+
+.btn-voltar {
+  font-size: 14px;
+}
+.btn-voltar i {
+  font-size: 21px !important;
+  vertical-align: text-bottom;
+}
+
+blockquote {
+  font-size: 15px !important;
+  color: #636363;
+  line-height: 1.6;
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 92%;
+  color: #808080;
+  margin-top: 5px;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 122px 0 20px 0;
+  padding: 0;
+}
+
+.hero-intro .logo img {
+  width: 3rem;
+}
+
+.hero-intro .logo {
+  margin-bottom: 2rem;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 25px;
+  color: #3b3b3b;
+}
+
+#hero h2 {
+  color: #4a4a4a;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+#hero h2 span {
+  font-weight: 500;
+}
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: auto;
+    margin: 122px 0 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+    margin: 65px 0 20px 0;
+  }
+  #hero h1 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hero-intro .logo img {
+    width: 5rem;
+  }
+  #footer .credits {
+    display: block !important;
+  }
+  .h2, h2 {
+    font-size: 1.5rem;
+  }
+  .h4, h4 {
+    font-size: 1.3rem;
+  }
+  .h5, h5 {
+    font-size: 1.15rem;
+  }
+  .portfolio-m {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  blockquote p {
+    font-size: 13px !important;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio Page
+--------------------------------------------------------------*/
+
+.inner-section-title {
+  padding: 2rem 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.inner-section-title small {
+  color: #797979;
+  font-weight: 400;
+}
+
+.inner-section-title h2 {
+  margin-top: 5px;
+}
+
+.inner-portfolio {
+  margin-top: 2rem;
+}
+
+.img-ferramentas {
+  max-width: 24px;
+}
+
+.inner-portfolio ul {
+  list-style-type: none;
+}
+
+.img-pantone {
+  box-shadow: 0px 1px 8px rgba(165, 164, 164, 0.35);
+}
+
+.inner-portfolio h5, .inner-portfolio h4 {
+  margin-top: 2rem;
+}
+
+.bxs-quote-alt-left {
+  color: #f6a11b;
+  margin-right: 8px;
+  font-size: 2rem !important;
+  margin-top: -8px;
+}
+
+.portfolio-m {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+
+.section-title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #14213d;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin-bottom: 22px;
+  list-style: none;
+  padding: 8px 0px;
+}
+
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #3b3b3b;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #F6A11B;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: #f6a11b;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 0 0 10px 0;
+  color: #787878;
+  font-size: 14px;
+}
+#footer .credits {
+  padding-top: 12px;
+  margin: 23px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #787878;
+}
